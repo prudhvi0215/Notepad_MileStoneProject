@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>NotesApp</title>
+</head>
+<body id='mainPage' onload="getAllNotes()">
+    <header>
+        <h1>PERSONAL NOTEPAD</h1>
+    </header>
+    <main id="notebook">
+        <section id="inputNotes">
+            <input type="text" id="title" placeholder="Enter title.." required/>
+            <textarea name="" id="notes" cols="30" rows="10" placeholder="Enter Note.."></textarea>
+            <button id="addBtn" onclick="addNote()">Add Note</button>
+        </section>
+        <section id="displayNotes">
+            <h1>Your Notes</h1>
+            <hr>
+            <h2 id="dataPresent"></h2>
+            <div id="outputNotes"></div>
+            <div id="editModel"></div>
+        </section>
+        <section id="delNotes">
+            <h1>Deleted Notes</h1>
+            <hr>
+            <h2 id="isDataDel"></h2>
+            <div id="deletedNotes"></div>
+        </section>
+    </main>
+    <footer>
+        <h5>----Copyright@prudhvi2022----</h5>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
